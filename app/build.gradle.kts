@@ -30,12 +30,20 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    testOptions {
+        unitTests.all {
+            it.useJUnitPlatform()
+        }
     }
 }
 
@@ -47,4 +55,6 @@ dependencies {
     implementation(libs.koin.androidx.startup)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.material)
+
+    testImplementation(libs.kotest.runner.junit5)
 }

@@ -5,6 +5,7 @@ constraintlayout = "2.1.4"
 coreKtx = "1.13.1"
 coroutines = "1.9.0"
 koin = "4.0.0"
+kotest = "5.9.1"
 kotlin = "2.0.20"
 material = "1.12.0"
 
@@ -14,6 +15,7 @@ androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayo
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-androidx-startup = { module = "io.insert-koin:koin-androidx-startup", version.ref = "koin" }
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 material = { module = "com.google.android.material:material", version.ref = "material" }
 
